@@ -179,6 +179,9 @@ body {
   text-align: center;
   color: #333333;
 }
+.info-email-catalog{
+  text-align: center;
+}
 .info-email{
   background-image: url("../images/Subscribe-background.png");
   background-color: #ffffff;
