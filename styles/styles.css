@@ -388,14 +388,28 @@ section.vissualy{
 .pagination-link-button{
   display: flex;
   flex-wrap: wrap;
-  max-width: 60px;
-  max-height: 60px;
+  max-width: max-content;
   min-height: 55px;
   min-width: 55px;
   background: #82B3D3;
   border-radius: 4px;
   text-decoration:none;
   color: #ffffff;
+}
+.pagination-item-active{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: max-content;
+  min-height: 55px;
+  min-width: 55px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  text-decoration:none;
+  color: #000000;
+}
+.pagination-link{
+  text-decoration:none;
+  color: #000000;
 }
 .email-form .button-blue{
   height: 52px;
