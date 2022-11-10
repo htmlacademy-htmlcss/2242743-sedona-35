@@ -483,6 +483,8 @@ section.vissualy {
 
 .info-hotel {
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .info-hotel-description {
@@ -496,7 +498,9 @@ section.vissualy {
 .info-email-catalog {
   text-align: center;
 }
-
+.email-form{
+  padding-bottom: 104px;
+}
 .info-email {
   background-image: url("../images/subscribe-background.png");
   background-color: #ffffff;
@@ -602,17 +606,35 @@ section.vissualy {
 
 
 
+.hotel-card-price{
 
-
-.hotel-card-link {
+}
+.hotel-card-title{
+  min-width: 300px;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  text-align: left;
+}
+.hotel-card-item{
+    display: block;
+    margin-bottom: 16px;
+    line-height: 0;
+}
+.hotel-card-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
   text-decoration: none;
+  color: #000000;
+  text-transform: none;
 }
 
 .hotel-card-type {
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -620,6 +642,7 @@ section.vissualy {
 }
 
 .hotel-card-price {
+  margin-top: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -633,6 +656,12 @@ section.vissualy {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.rating{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 9px;
 }
 
 
@@ -674,19 +703,26 @@ section.vissualy {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  gap: 20px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  justify-items: end;
 }
 
-.hotel-card {
-  width: 340px;
+.hotel-card-type {
+
+}
+
+.hotel-card{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 16px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .catalog-container {
@@ -694,27 +730,42 @@ section.vissualy {
 }
 
 .hotel-card-button {
-  padding: 8px 50px;
-  border-radius: 4px;
-  gap: 10px;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
-  list-style: none;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .detail-button {
-  padding: 8px 50px;
+  min-width: 133px;
   border-radius: 4px;
-  background: #756157;
+  margin-right: 26px;
+  margin-bottom: 16px;
+  line-height: 37px;
+  background-color: #756157;
 }
 
 .favorites-button-blue {
   background: #82B3D3;
+  min-width: 141px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  line-height: 37px;
+  background-color: #83b3d3;
 }
 
 .favorites-button-green {
+  min-width: 141px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  line-height: 37px;
   background: #7DB54F;
+}
+.rating-item:not(:last-child) {
+  margin-right: 6px;
 }
 
 form .button-blue {
@@ -727,9 +778,17 @@ form .button-blue {
 }
 
 .hotel-card-rating {
-  padding: 8px 50px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 23px;
+  padding-right: 22px;
   background: #F2F2F2;
-  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 .vissualy .button {
