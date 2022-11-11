@@ -29,10 +29,16 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item-user">
-              <a class="navigation-link-user" href="#"><span class="visually-hidden">Поис</span></a>
+              <a class="navigation-link-user" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19" fill="none" viewBox="0 0 19 19"><path fill="#000" d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/></svg>
+                <span class="visually-hidden">Поис</span>
+              </a>
             </li>
             <li class="navigation-item-user">
-              <a class="navigation-link-user" href="#"><span class="visually-hidden">В Избранное</span></a>
+              <a class="navigation-link-user" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" viewBox="0 0 18 17"><path fill="#000" d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+                <span class="visually-hidden">В Избранное</span>
+              </a>
             </li>
           </ul>
           <a class="button-navigation" href="#">Хочу сюда!</a>
@@ -108,15 +114,26 @@
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвое</option>
               </select>
-              <a href="#" class="button-mode button-mode-active">
-                <span class="visually-hidden">Показать плиткой</span>
-              </a>
-              <a href="#" class="button-mode">
-                <span class="visually-hidden">Показать слайдами</span>
-              </a>
-              <a href="#" class="button-mode">
-                <span class="visually-hidden">Показать списком</span>
-              </a>
+              <ul class="view-mode">
+                <li class="view-mode-item">
+                  <a href="#" class="button-mode button-mode-active">
+                    <svg xmlns="http://www.w3.org/2000/svg" class= "mode-icone" class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
+                    <span class="visually-hidden">Показать плиткой</span>
+                  </a>
+                </li>
+                <li class="view-mode-item">
+                  <a href="#" class="button-mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" class= "mode-icone" class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
+                    <span class="visually-hidden">Показать слайдами</span>
+                  </a>
+                </li>
+                <li class="view-mode-item">
+                  <a href="#" class="button-mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" class= "mode-icone" class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
+                    <span class="visually-hidden">Показать списком</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           <div class="catalog-container">
             <ul class="hotel-list">
@@ -256,16 +273,19 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="button-social" href="https://vk.com/htmlacademy">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false" width="25" height="15" fill="none" viewBox="0 0 25 15"><path fill="#83B3D3" fill-rule="evenodd" d="M24.116 1.298c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.298c0-.656-.184-.948-.74-.948H9.817C9.4.35 9.15.654 9.15.943c0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885C5.116.638 4.865.35 4.193.35H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" clip-rule="evenodd"/></svg>
                   <span class="visually-hidden">VK</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="button-social" href="https://t.me/htmlacademy ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false" width="18" height="16" fill="none" viewBox="0 0 18 16"><path fill="#83B3D3" d="M16.785.45.84 6.598C-.248 7.035-.24 7.642.64 7.913L4.735 9.19l9.472-5.976c.448-.272.857-.126.52.173l-7.673 6.925H7.05l.002.001-.283 4.22c.414 0 .597-.19.829-.414l1.988-1.934 4.136 3.055c.762.42 1.31.204 1.5-.706L17.938 1.74C18.216.625 17.513.12 16.785.45Z"/></svg>
                   <span class="visually-hidden">Telegramm</span>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" aria-hidden="true" focusable="false" width="23" height="18" fill="none" viewBox="0 0 23 18"><path fill="#83B3D3" d="M18.94.85H3.507C1.647.85.333 2.444.333 4.25v10.094c0 1.913 1.314 3.506 3.174 3.506H19.16c1.642 0 3.174-1.593 3.174-3.4V4.25c-.219-1.806-1.532-3.4-3.393-3.4ZM7.995 13.388V5.313l7.333 4.037-7.333 4.038Z"/></svg>
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
