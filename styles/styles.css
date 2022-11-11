@@ -625,15 +625,13 @@ section.vissualy {
 }
 .button-mode {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-right: 16px;
-  padding-left: 16px;
   text-align: center;
   margin-left: auto;
-  width: 48px;
-  height: 48px;
+  height: 44px;
   position: relative;
+}
+.view-mode-item:not(:last-child) {
+  margin-right: 8px;
 }
 .mode-icone{
   position: absolute;
